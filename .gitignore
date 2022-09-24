@@ -1,0 +1,14 @@
+# Ignore everything by default
+*
+
+# Include directories
+!src/
+!src/**
+
+# Include files
+!.gitignore
+!.prettierrc.js
+!package-lock.json
+!package.json
+!readme.md
+!tsconfig.json
