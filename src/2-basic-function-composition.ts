@@ -16,7 +16,7 @@ type User = {
 const users: User[] = []
 
 namespace RefactoringIfStatements {
-  namespace Regular {
+  namespace Default {
     const typicalIsEligibleToVote = (person: Person) => {
       if (person.birthCountry === 'poland' || person.naturalizationDate !== null) {
         if (Date.now() - person.birthDate.getTime() > 18 * 365 * 24 * 60 * 60 * 1000) {
@@ -41,7 +41,7 @@ namespace RefactoringIfStatements {
 }
 
 namespace RefactoringFilters {
-  namespace Regular {
+  namespace Default {
     const selectAdultMalesWithAnimals = (users: User[]) => {
       return users.filter((user) => {
         if (user.gender === 'male') {
